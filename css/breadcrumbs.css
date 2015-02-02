@@ -1,0 +1,52 @@
+.breadcrumbs {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 2em;
+	list-style: none;
+	line-height: 0;
+	font-size: 14px;
+	text-align: center;
+}
+.breadcrumbs > li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	height: 0;
+	border: 10px solid #eee;
+	border-left: 10px solid transparent !important;
+	position: relative;
+	margin: 0 3px 3px 0;
+}
+.breadcrumbs > li:after {
+	content: '';
+	border: 10px solid transparent;
+	border-left: 10px solid #eee;
+	/*width: 0;
+	height: 0;*/
+	float: left;
+	position: absolute;
+	right: -30px;
+	top: -10px;
+}
+.breadcrumbs > li > a {
+	font-size: 0.9em;
+	position: relative;
+	top: -1px;
+	padding: 0 0.5em 0 1.2em;
+	text-decoration: none;
+	color: #777;
+	height: 20px;
+	display: inline-block;
+	margin: 0 -10px;
+}
+.breadcrumbs > li:hover {
+	border-color: #ddd;
+	cursor: pointer;
+	/*border-left: 10px solid transparent;*/
+}
+.breadcrumbs > li:hover > a {
+	color: #333;
+}
+.breadcrumbs > li:hover:after {
+	border-left: 10px solid #ddd;
+}

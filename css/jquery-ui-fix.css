@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+.ui-widget { font-size: 14px; }
+.ui-tabs-panel { color: #555; }
+.ui-tabs-panel a { color: #468; }
+.ui-tabs-panel a:hover { color: #46c; }
+.menuselect-overflow { height: 200px; }
+.ui-menu { width: 150px; }

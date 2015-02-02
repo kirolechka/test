@@ -1,0 +1,22 @@
+# расположение страниц ошибок
+ErrorDocument 404 /error/404/
+ErrorDocument 403 /error/403/
+ErrorDocument 401 /error/401/
+ErrorDocument 500 /error/500/
+
+# в случае ошибки "FORBIDDEN" показывается текстовое сообщение, которое
+# обязательно должно начинаться с кавычки, кавычка в сообщении не выводится:
+
+# ErrorDocument 403 "Sorry can't allow you access today, 403 Status Codes Apache"
+
+# кодировка на все файлы
+# AddDefaultCharset WINDOWS-1251
+
+# Запрет выдачи листинга пустого каталога
+# Options -Indexes
+
+# файлы с другими расширениями
+# DirectoryIndex index.html index.shtml index.pl index.cgi index.php
+
+# При обращении к каталогу открывался не index.html
+# DirectoryIndex htaccess.php /cgi-bin/index.pl

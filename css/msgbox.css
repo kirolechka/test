@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+.curtain {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	z-index: 5000;
+}
+.msgbox {
+	float: left;
+	color: #fff;
+	font-size: 18pt;
+	max-width: 60%;
+	font-weight: normal;
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.msgbox td:first-child {
+	vertical-align: top;
+	width: 178px;
+	height: 128px;
+	background-repeat: no-repeat;
+}
+.msgbox h1 {
+	margin: 0;
+	font-size: 48pt;
+	font-weight: normal;
+	color: #fff;
+}
+.msgbox.error td:first-child { background-image: url(/img/system-error.png); }
+.msgbox.success td:first-child { background-image: url(/img/system-ok.png); }

@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+.menu {
+	//overflow: scroll;
+	//margin-bottom: 2em;
+	cursor: default;
+}
+.menu, .menu ul {
+	list-style: none;
+	margin: 0;
+}
+.menu li > a > img {
+	margin-right: 10px;
+	vertical-align: middle;
+	margin-left: -26px;
+	//position: relative;
+	//left: -10px;
+}
+.menu li > a {
+	color: #555;
+	display: block;
+	text-decoration: none;
+	padding: 5px 30px;
+	cursor: default;
+	margin-left: 26px;
+}
+.menu li > a.folder_down { background: url(/img/bullet_arrow_down.png) no-repeat 90% 50%; }
+.menu li > a.folder_up { background: url(/img/bullet_arrow_up.png) no-repeat 90% 50%; }
+.menu li:hover {
+	background: rgba(0,0,0,0.05) !important;
+}
+.menu li > a:hover {
+	color: #000;
+}
+.menu li ul {
+	display: none;
+}
+.menu li.separator {
+	margin: 5px 0;
+	border-top: 1px dashed #ccc;
+}

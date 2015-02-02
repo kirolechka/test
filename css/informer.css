@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+dl.informer {
+	color: white;
+	display: inline-block;
+	white-space: nowrap;
+	font-size: 1.1em;
+	background: #999;
+	padding: 0;
+	border-radius: 100px;
+	margin: 0.2em;
+}
+dl.informer > * {
+	display: inline-block;
+	padding: 1em;
+}
+dl.informer > dt {
+	background: #777;
+	border-radius: 100px;
+}
+dl.informer > dd {
+}
+
+dl.informer.greensea { background: #1abc9c; }
+dl.informer.greensea > dt { background: #16a085; }
+
+dl.informer.emerald { background: #2ecc71; }
+dl.informer.emerald > dt { background: #27ae60; }
+
+dl.informer.river { background: #3498db; }
+dl.informer.river > dt { background: #2980b9; }
+
+dl.informer.amethyst { background: #9b59b6; }
+dl.informer.amethyst > dt { background: #8e44ad; }
+
+dl.informer.asphalt { background: #34495e; }
+dl.informer.asphalt > dt { background: #2c3e50; }
+
+dl.informer.orange { background: #f1c40f; }
+dl.informer.orange > dt { background: #f39c12; }
+
+dl.informer.carrot { background: #e67e22; }
+dl.informer.carrot > dt { background: #d35400; }
+
+dl.informer.alizarin { background: #e74c3c; }
+dl.informer.alizarin > dt { background: #c0392b; }
+
+dl.informer.asbestos { background: #95a5a6; }
+dl.informer.asbestos > dt { background: #7f8c8d; }
