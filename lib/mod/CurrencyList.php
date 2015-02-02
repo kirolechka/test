@@ -6,8 +6,6 @@ class CurrencyList extends QDBTable {
 		$curr = new self();
 		$curr->number = $options['number'];
 		$curr->code = $options['code'];
-		$curr->unit = $options['unit'];
-		$curr->coin = $options['coin'];
 		$curr->name = $options['name'];
 		$error = $curr->update();
 		if ($error) {
@@ -27,17 +25,11 @@ class CurrencyList extends QDBTable {
 		return parent::select($argv);
 	}
 	// вывод $value в соответствии с валютным обозначением
-	public function format($value, $type = null) {
-		if ($type == 'code') {
-			return number_format($value, 2, '.', ' ') . ' ' . $this->code;
-		}
-		return number_format($value, 2, '.', ' ') . $this->unit;
+	public function format($value) {
+		return number_format($value, 2, '.', ' ') . ' ' . $this->code;
 	}
 	public function toString() {
-		if (Core::$cli) {
-			return $this->code;
-		}
-		return ($this->unit == '₽') ? '<span class = "RUB"></span>' : $this->unit;
+		return $this->code;
 	}
 	protected function _validate() {
 		if ($this->number < 0 || $this->number > 999) {

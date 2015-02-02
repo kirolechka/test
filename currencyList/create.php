@@ -28,10 +28,6 @@ $(document).ready(function(){
 			<td><input type = "text" name = "unit"></td>
 		</tr>
 		<tr>
-			<td>1/100</td>
-			<td><input type = "text" name = "coin"></td>
-		</tr>
-		<tr>
 			<td></td>
 			<td><input type = "hidden" name = "type" value = "method"><input type = "submit" value = "Создать"></td>
 		</tr>

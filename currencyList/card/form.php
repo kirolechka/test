@@ -24,14 +24,6 @@ $(document).ready(function(){
 			<td><input type = "text" name = "name" value = "<?=$args[0]->name?>"></td>
 		</tr>
 		<tr>
-			<td>Символ</td>
-			<td><input type = "text" name = "unit" value = "<?=$args[0]->unit?>"></td>
-		</tr>
-		<tr>
-			<td>1/100</td>
-			<td><input type = "text" name = "coin" value = "<?=$args[0]->coin?>"></td>
-		</tr>
-		<tr>
 			<td></td>
 			<td>
 				<input type = "hidden" name = "id" value = "<?=$args[0]->id?>">
