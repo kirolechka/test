@@ -6,7 +6,7 @@ return array (
 				'host' => 'localhost',
 				'user' => 'root',
 				'pass' => 'Erf_34YTFhbf',
-				'name' => 'bill',
+				'name' => 'test',
 				'charset' => 'utf8',
 		),
 		'dir' => array (
